@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc866925.css",
+    "main.js": "/static/js/main.c0d9f698.js",
+    "static/media/ArpitaMadhukarKalburgi.png": "/static/media/ArpitaMadhukarKalburgi.07983efc951b3836b28c.png",
+    "static/media/OCI-GenAI.png": "/static/media/OCI-GenAI.0d1b0d02992b7c8b3fad.png",
+    "static/media/SNow-CSA.png": "/static/media/SNow-CSA.8a2118ffe1f268615cf3.png",
+    "static/media/BEC-Logo.png": "/static/media/BEC-Logo.94c7457c4a4562a53ebc.png",
+    "static/media/AWS-SSA.png": "/static/media/AWS-SSA.9fee385a918abeca8734.png",
+    "static/media/SNow-ATF.png": "/static/media/SNow-ATF.3bf1e121af9b005ab28f.png",
+    "static/media/SNow-FD.png": "/static/media/SNow-FD.628ff22e904732e1b015.png",
+    "static/media/UNCC-Logo.png": "/static/media/UNCC-Logo.fea6eb8b057052c44384.png",
+    "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
+    "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
+    "index.html": "/index.html",
+    "main.bc866925.css.map": "/static/css/main.bc866925.css.map",
+    "main.c0d9f698.js.map": "/static/js/main.c0d9f698.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc866925.css",
+    "static/js/main.c0d9f698.js"
+  ]
+}
