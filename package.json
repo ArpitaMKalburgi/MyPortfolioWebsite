@@ -1,6 +1,7 @@
 {
   "name": "arpita-portfolio",
   "version": "0.1.0",
+  "homepage": "https://arpita-kalburgi.github.io/MyPortfolioWebsite",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
