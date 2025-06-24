@@ -59,7 +59,7 @@ function App() {
 
     {/* LinkedIn with logo */}
     <a
-      href="https://linkedin.com/in/your-profile"
+      href="https://www.linkedin.com/in/arpita-kalburgi/"
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center gap-2 text-[#0f2940] font-medium text-base underline hover:text-yellow-500 transition"
@@ -70,7 +70,7 @@ function App() {
 
     {/* GitHub with logo */}
     <a
-      href="https://github.com/yourusername"
+      href="https://github.com/ArpitaMKalburgi"
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center gap-2 text-[#0f2940] font-medium text-base underline hover:text-yellow-500 transition"
