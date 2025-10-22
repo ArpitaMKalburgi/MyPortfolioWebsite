@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfolioWebsite/static/css/main.bc866925.css",
-    "main.js": "/MyPortfolioWebsite/static/js/main.254ba8d2.js",
+    "main.css": "/MyPortfolioWebsite/static/css/main.f5131b0c.css",
+    "main.js": "/MyPortfolioWebsite/static/js/main.80303c21.js",
     "static/media/ArpitaMadhukarKalburgi.png": "/MyPortfolioWebsite/static/media/ArpitaMadhukarKalburgi.07983efc951b3836b28c.png",
     "static/media/OCI-GenAI.png": "/MyPortfolioWebsite/static/media/OCI-GenAI.0d1b0d02992b7c8b3fad.png",
     "static/media/SNow-CSA.png": "/MyPortfolioWebsite/static/media/SNow-CSA.8a2118ffe1f268615cf3.png",
@@ -9,15 +9,17 @@
     "static/media/AWS-SSA.png": "/MyPortfolioWebsite/static/media/AWS-SSA.9fee385a918abeca8734.png",
     "static/media/SNow-ATF.png": "/MyPortfolioWebsite/static/media/SNow-ATF.3bf1e121af9b005ab28f.png",
     "static/media/SNow-FD.png": "/MyPortfolioWebsite/static/media/SNow-FD.628ff22e904732e1b015.png",
+    "static/media/Databricks Gen-AI.png": "/MyPortfolioWebsite/static/media/Databricks Gen-AI.a74f2802721252a3404f.png",
+    "static/media/Databricks Fundamentals.png": "/MyPortfolioWebsite/static/media/Databricks Fundamentals.9e483ecfb26631d78088.png",
     "static/media/UNCC-Logo.png": "/MyPortfolioWebsite/static/media/UNCC-Logo.fea6eb8b057052c44384.png",
     "static/media/github.png": "/MyPortfolioWebsite/static/media/github.f11021803f68852df283.png",
     "static/media/linkedin.png": "/MyPortfolioWebsite/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/MyPortfolioWebsite/index.html",
-    "main.bc866925.css.map": "/MyPortfolioWebsite/static/css/main.bc866925.css.map",
-    "main.254ba8d2.js.map": "/MyPortfolioWebsite/static/js/main.254ba8d2.js.map"
+    "main.f5131b0c.css.map": "/MyPortfolioWebsite/static/css/main.f5131b0c.css.map",
+    "main.80303c21.js.map": "/MyPortfolioWebsite/static/js/main.80303c21.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc866925.css",
-    "static/js/main.254ba8d2.js"
+    "static/css/main.f5131b0c.css",
+    "static/js/main.80303c21.js"
   ]
 }
