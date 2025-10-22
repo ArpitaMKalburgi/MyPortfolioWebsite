@@ -11,11 +11,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "react-scroll": "^1.9.3",
     "react-simple-typewriter": "^5.0.1",
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
     "web-vitals": "^2.1.4"
   },
   "scripts": {
