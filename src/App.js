@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import linkedinLogo from './assets/linkedin.png';
 import githubLogo from './assets/github.png';
-<<<<<<< HEAD
 import { Typewriter } from 'react-simple-typewriter';
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
+
 
 
 function App() {
@@ -39,7 +37,6 @@ function App() {
  <div className="max-w-xl">
   <h1 className="text-6xl font-extrabold text-gray-800 mb-4">Hi, I'm Arpita!</h1>
 
-<<<<<<< HEAD
 
 <p className="text-xl text-gray-700 font-semibold mb-1">
   <Typewriter
@@ -53,42 +50,24 @@ function App() {
   />
 </p>
 
-=======
-  <p className="text-xl text-gray-700 font-semibold mb-1">
-    Cloud Engineer & Data Developer
-  </p>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
 
   <p className="text-lg text-gray-600 mb-6 leading-relaxed">
     Building scalable backend systems, cloud-native solutions, and intelligent data pipelines.
   </p>
 
   <p className="text-base uppercase text-gray-500 tracking-wider mb-6">
-<<<<<<< HEAD
     Python • SQL • JavaScript • REST API • AI 
   </p>
 
   <div className="flex items-center gap-6">
     {/*<a
-=======
-    ETL • Spark • AWS • SQL • Airflow • Python
-  </p>
-
-  <div className="flex items-center gap-6">
-    <a
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       href="https://your-resume-link.com"
       target="_blank"
       rel="noopener noreferrer"
       className="bg-[#0f2940] text-white px-6 py-2 rounded-full font-semibold text-base hover:bg-[#1f446c] transition"
     >
       View Resume
-<<<<<<< HEAD
     </a> */}
-=======
-    </a>
-
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
     {/* LinkedIn with logo */}
     <a
       href="https://www.linkedin.com/in/arpita-kalburgi/"
@@ -117,7 +96,6 @@ function App() {
 </div>
 
 
-<<<<<<< HEAD
       <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white px-8 py-16" id="about">
   <h2 className="text-5xl font-black mb-10 text-[#0f2940] text-center">ABOUT ME</h2>
   <div className="max-w-3xl text-center md:text-left leading-relaxed text-gray-800 space-y-4">
@@ -136,55 +114,6 @@ function App() {
     <p>
       I love <strong>building systems, solving real-world problems</strong>, and am actively seeking <strong>full-time opportunities</strong> in <strong>Cloud, Data, or AI-driven development</strong> roles.
     </p>
-=======
-      <div className="h-screen w-full flex items-center justify-center bg-white" id="about">
-        <h2 className="text-4xl font-semibold">About Me</h2>
-      </div>
-
-      {/* EDUCATION */}
-      <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#aad4bd] text-[#0f2940] px-8 py-20" id="education">
-
-  <h2 className="text-5xl font-black mb-16 text-center">EDUCATION</h2>
-
-  {/* UNC Charlotte */}
-  <div className="flex flex-col md:flex-row items-start justify-center gap-8 mb-16 w-full max-w-6xl">
-    <img
-      src={require('./assets/UNCC-Logo.png')}
-      alt="UNC Charlotte Logo"
-      className="w-40 h-auto object-contain bg-white p-2 shadow-lg"
-    />
-    <div className="space-y-3">
-      <h3 className="text-xl font-bold">
-        Master of Science in Information Technology, GPA: 4.0/4.0
-      </h3>
-      <p className="text-base font-medium">
-        University of North Carolina, Charlotte &nbsp; | &nbsp; 2 years &nbsp; | &nbsp; May 2025
-      </p>
-      <p className="text-sm leading-relaxed">
-        <span className="font-semibold">Coursework:</span> Network-Based App Development, Applied Databases, Big Data Analytics, Software Systems Design & Implementation, Data Science (Individual Study), Cloud Computing & Data Analysis, Information Ethics, Security & Policies, Principles of Info Security & Privacy
-      </p>
-    </div>
-  </div>
-
-  {/* BEC - aligned like UNC */}
-  <div className="flex flex-col md:flex-row items-start justify-center gap-8 w-full max-w-6xl">
-    <img
-      src={require('./assets/BEC-Logo.png')}
-      alt="BEC Logo"
-      className="w-40 h-auto object-contain rounded-full border-4 border-yellow-400 shadow-lg bg-white p-2"
-    />
-    <div className="space-y-3">
-      <h3 className="text-xl font-bold">
-        Bachelor in Information Science & Engineering
-      </h3>
-      <p className="text-base font-medium">
-        Basaveshwar Engineering College &nbsp; | &nbsp; 4 years &nbsp; | &nbsp; Sept 2020
-      </p>
-      <p className="text-sm leading-relaxed">
-        <span className="font-semibold">Coursework:</span> Data Structures & Algorithms, Java Programming, Python, Cloud Computing, DBMS, Operating Systems, Software Engineering, Web Technologies, AI, ML, Big Data, Data Mining, Computer Networks, Computer Organization, Graph Theory
-      </p>
-    </div>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
   </div>
 </div>
 
@@ -198,7 +127,6 @@ function App() {
     {/* Accenture - ServiceNow Developer */}
     <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition">
       <h3 className="text-sm font-bold text-[#1d4ed8] uppercase">Accenture</h3>
-<<<<<<< HEAD
       <p className="text-lg font-semibold mt-1">Cloud & Platform Engineer</p>
       <p className="text-sm text-gray-500 mb-3">10 months · April 2023 – Jan 2024</p>
       <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> Java, Go, MongoDB, Multithreading, AWS, Caching, Microservices, Docker, Kubernetes, Jenkins, CI/CD, JUnit, Karate</p>
@@ -206,22 +134,12 @@ function App() {
         <li>Built and deployed scalable microservices using Java, Micronaut, and MongoDB, improving reliability and performance in distributed systems.</li>
         <li>Automated CI/CD pipelines and Kubernetes deployments on AWS with Jenkins and GoLang, streamlining delivery and reducing release times.</li>
         <li>Expanded automated testing coverage with JUnit and Karate while mentoring engineers on Agile and cloud-native best practices.</li>
-=======
-      <p className="text-lg font-semibold mt-1">ServiceNow Developer</p>
-      <p className="text-sm text-gray-500 mb-3">7 months · Jun 2023 – Jan 2024</p>
-      <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> Service Portal, HTML, Angular, GlideRecord, Virtual Agent, REST API</p>
-      <ul className="list-disc pl-5 text-sm leading-relaxed text-gray-700 space-y-1">
-        <li>Developed widgets for incident status and downtime alerts, reducing duplicate tickets.</li>
-        <li>Configured Virtual Agent for agent assignment automation, boosting routing by 25%.</li>
-        <li>Maintained sprint boards and ensured alignment with delivery goals.</li>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </ul>
     </div>
 
     {/* Accenture - Application Dev Associate */}
     <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition">
       <h3 className="text-sm font-bold text-[#1d4ed8] uppercase">Accenture</h3>
-<<<<<<< HEAD
       <p className="text-lg font-semibold mt-1">Software Engineer</p>
       <p className="text-sm text-gray-500 mb-3">2 Years 1 Month · Apr 2021 – March 2023</p>
       <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> GCP, Rest API, MongoDB, NodeJS, Azure, DevOps, CI/CD</p>
@@ -230,37 +148,18 @@ function App() {
         <li>Engineered system reliability scripts in Shell for container health checks, log collection, and recovery enhancing incident triage efficiency by 30%.</li>
         <li>Strengthened cloud infrastructure security and compliance by managing IAM, Cloud Storage, and KMS configurations for controlled access and reproducibility.</li>
         <li>Automated data ingestion pipelines using Node.js and StreamSets to efficiently load and transform raw text data into MongoDB collections.</li>
-=======
-      <p className="text-lg font-semibold mt-1">Application Development Associate</p>
-      <p className="text-sm text-gray-500 mb-3">2 Years 1 Month · Apr 2021 – May 2023</p>
-      <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> ServiceNow, JIRA, Flow Designer, CSAT/DSAT, UI Builder, GlideRecord</p>
-      <ul className="list-disc pl-5 text-sm leading-relaxed text-gray-700 space-y-1">
-        <li>Built ServiceNow workflows, dashboards & chatbots across departments.</li>
-        <li>Improved SLA visibility and incident resolution using performance analytics.</li>
-        <li>Reduced manual fulfillment effort by 30% via automated catalog items.</li>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </ul>
     </div>
 
     {/* Cognizant - Data Analyst */}
     <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition">
       <h3 className="text-sm font-bold text-[#1d4ed8] uppercase">Cognizant Technology Solutions</h3>
-<<<<<<< HEAD
       <p className="text-lg font-semibold mt-1">Software Engineer</p>
       <p className="text-sm text-gray-500 mb-3">3 Months · Dec 2020 – Mar 2021</p>
       <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> Java, SpringBoot, AWS, Microservices, REST APIs, System Migration, Cloud Optimization</p>
       <ul className="list-disc pl-5 text-sm leading-relaxed text-gray-700 space-y-1">
         <li>Enhanced retail systems with REST APIs & SpringBoot on AWS, improving efficiency.</li>
         <li>Migrated legacy Java applications into SpringBoot microservices with AWS, improving operational agility.</li>
-=======
-      <p className="text-lg font-semibold mt-1">Data & Reporting Analyst</p>
-      <p className="text-sm text-gray-500 mb-3">3 Months · Dec 2020 – Mar 2021</p>
-      <p className="text-sm mb-2"><span className="font-semibold text-gray-700">Skills Used:</span> SQL, Python, Power BI, ETL, Forecasting</p>
-      <ul className="list-disc pl-5 text-sm leading-relaxed text-gray-700 space-y-1">
-        <li>Built ETL pipelines for 10M+ records and improved reporting automation by 40%.</li>
-        <li>Created sales/churn forecasting models that increased ROI by 22%.</li>
-        <li>Developed Power BI dashboards for 6 regions to reduce manual reporting.</li>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </ul>
     </div>
   </div>
@@ -271,11 +170,7 @@ function App() {
 
 <div className="py-16 px-4 bg-white" id="certifications">
   <div className="max-w-6xl mx-auto bg-gray-50 rounded-xl shadow-lg p-8">
-<<<<<<< HEAD
     <h2 className="text-4xl font-extrabold text-center text-[#0f2940] mb-10">CERTIFICATIONS & ACCREDITATIONS</h2>
-=======
-    <h2 className="text-4xl font-extrabold text-center text-[#0f2940] mb-10">Certifications</h2>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-center items-center">
       {/* Repeat this block for each certification */}
@@ -285,12 +180,9 @@ function App() {
           alt="AWS Certified Solutions Architect"
           className="w-30 h-30 object-contain"
         />
-<<<<<<< HEAD
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     AWS Certified Solutions Architect - Associate
   </p>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
         <a
           href="https://www.credly.com/badges/09a6fc14-8ddc-4b3b-8058-2d560682651a/public_url"
           target="_blank"
@@ -303,25 +195,6 @@ function App() {
 
       {/* Repeat for all 6 certifications with appropriate links/images */}
 
-<<<<<<< HEAD
-
-=======
-<div className="flex flex-col items-center group hover:scale-105 transition-transform duration-300">
-        <img
-          src={require('./assets/AWS-SSA.png')}
-          alt="AWS Certified Solutions Architect"
-          className="w-30 h-30 object-contain"
-        />
-        <a
-          href="https://example.com/cert1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 text-sm font-medium text-[#0f2940] opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          Show Credentials →
-        </a>
-      </div>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
 
       <div className="flex flex-col items-center group hover:scale-105 transition-transform duration-300">
         <img
@@ -329,12 +202,9 @@ function App() {
           alt="AWS Certified Solutions Architect"
           className="w-30 h-30 object-contain"
         />
-<<<<<<< HEAD
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     Oracle Cloud Infrastructure Generative AI Professional
   </p>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
         <a
           href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=54FA0F73368A734A3447C6A2BF2D5248EB94E929EF95E43FD8BA97CDA4830D6F"
           target="_blank"
@@ -351,12 +221,9 @@ function App() {
           alt="ServiceNow Certified System Administrator"
           className="w-30 h-30 object-contain"
         />
-<<<<<<< HEAD
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Certified System Administrator
   </p>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
         <a
           href="https://www.linkedin.com/in/arpita-kalburgi/recent-activity/images/"
           target="_blank"
@@ -372,12 +239,9 @@ function App() {
           alt="Micro-Certification - Flow Designer"
           className="w-30 h-30 object-contain"
         />
-<<<<<<< HEAD
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Micro-Certification - Flow Designer
   </p>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
         <a
           href="https://example.com/cert1"
           target="_blank"
@@ -393,12 +257,9 @@ function App() {
           alt="Micro-Certification - Automated Test Framework"
           className="w-30 h-30 object-contain"
         />
-<<<<<<< HEAD
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Micro-Certification - Automated Test Framework
   </p>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
         <a
           href="https://example.com/cert1"
           target="_blank"
@@ -408,7 +269,6 @@ function App() {
           Show Credentials →
         </a>
       </div>
-<<<<<<< HEAD
       <div className="flex flex-col items-center group hover:scale-105 transition-transform duration-300">
         <img
           src={require('./assets/Databricks Fundamentals.png')}
@@ -445,17 +305,10 @@ function App() {
           Show Credentials →
         </a>
       </div>
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
     </div>
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       <div className="min-h-screen bg-gray-100 px-6 py-20" id="projects">
   <h2 className="text-5xl font-extrabold text-center text-[#0f2940] mb-16">PROJECTS</h2>
 
@@ -463,7 +316,6 @@ function App() {
     {/* Example project card - repeat 6 times */}
     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between hover:shadow-2xl transition duration-300">
       <div>
-<<<<<<< HEAD
         <h3 className="text-xl font-bold text-[#0f2940] mb-2">Byte-to-Bite</h3>
         <p className="text-sm text-gray-600">Designed and developed Byte-to-Bite, an AI-powered recipe and inventory management app that generates personalized meals from available ingredients, reducing food waste through intelligent recommendations.</p>
       </div>
@@ -497,13 +349,6 @@ function App() {
       </div>
       <a
   href="https://github.com/ArpitaMKalburgi/Orders-ETL-Pipeline"
-=======
-        <h3 className="text-xl font-bold text-[#0f2940] mb-2">AQI Forecasting</h3>
-        <p className="text-sm text-gray-600">Built ML model to predict air quality index using weather and traffic data.</p>
-      </div>
-      <a
-  href="https://github.com/your-username/aqi-forecasting"
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
   target="_blank"
   rel="noopener noreferrer"
   className="mt-6 inline-flex items-center text-[#0f2940] font-medium text-sm hover:bg-[#eef3f2] px-2 py-1 rounded transition duration-200"
@@ -558,11 +403,7 @@ function App() {
     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between hover:shadow-2xl transition duration-300">
       <div>
         <h3 className="text-xl font-bold text-[#0f2940] mb-2">Restaurant Business Intelligence Sentiment Analysis</h3>
-<<<<<<< HEAD
         <p className="text-sm text-gray-600">Built a Restaurant Business Intelligence pipeline integrating sales, pricing, and customer sentiment using SQL, Python, BigQuery, Tableau to visualize sales trends and apply NLP sentiment analysis for smarter pricing decisions.</p>
-=======
-        <p className="text-sm text-gray-600">Built ML model to predict air quality index using weather and traffic data.</p>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </div>
             <a
   href="https://github.com/ArpitaMKalburgi/Restaurant-Business-Intelligence-Sentiment-Analysis"
@@ -590,13 +431,8 @@ function App() {
 
     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between hover:shadow-2xl transition duration-300">
       <div>
-<<<<<<< HEAD
         <h3 className="text-xl font-bold text-[#0f2940] mb-2">Bubble Chart (Private Repo: Request access)</h3>
         <p className="text-sm text-gray-600">Designed a data-driven D3.js bubble visualization that connects foods, nutrients, and disease impact through dynamic filtering and visual storytelling.</p>
-=======
-        <h3 className="text-xl font-bold text-[#0f2940] mb-2">Bubble Chart</h3>
-        <p className="text-sm text-gray-600">Built ML model to predict air quality index using weather and traffic data.</p>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </div>
             <a
   href="https://github.com/ArpitaMKalburgi/BubbleChart---MetaboFoodDB"
@@ -655,11 +491,7 @@ function App() {
     <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between hover:shadow-2xl transition duration-300">
       <div>
         <h3 className="text-xl font-bold text-[#0f2940] mb-2">Personal Budget</h3>
-<<<<<<< HEAD
         <p className="text-sm text-gray-600">Developed a budget management dashboard with real-time expense tracking and data visualization using Python, Flask, and Chart.js.</p>
-=======
-        <p className="text-sm text-gray-600">Built ML model to predict air quality index using weather and traffic data.</p>
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
       </div>
             <a
   href="https://github.com/ArpitaMKalburgi/personal-budget"
@@ -690,7 +522,6 @@ function App() {
   </div>
 </div>
 
-<<<<<<< HEAD
 {/* HACKATHONS & CASE STUDIES */}
 <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#f8f9fa] text-[#0f2940] px-8 py-20" id="hackathons">
   <h2 className="text-5xl font-black mb-16 text-center">HACKATHONS & CASE STUDIES</h2>
@@ -798,8 +629,6 @@ function App() {
 </div>
 
 
-=======
->>>>>>> 66bba063566b280d70534965895e2c9beb262fe4
 
       <div className="py-12 bg-gray-100 flex items-center justify-center px-2" id="contact">
   <div className="w-full max-w-xs bg-white p-3 rounded-xl shadow-md">
