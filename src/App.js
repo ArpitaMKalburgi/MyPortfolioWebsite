@@ -1,41 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from './components/Sidebar';
 import linkedinLogo from './assets/linkedin.png';
 import githubLogo from './assets/github.png';
 import { Typewriter } from 'react-simple-typewriter';
+import ContactForm from './components/ContactForm';
 
 
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="relative font-sans">
-      {/* Hamburger Menu */}
-      <button onClick={() => setMenuOpen(true)} className="fixed top-6 left-6 z-50">
-        <div className="w-8 h-1 bg-black mb-1"></div>
-        <div className="w-8 h-1 bg-black mb-1"></div>
-        <div className="w-8 h-1 bg-black"></div>
-      </button>
-
-      {/* Sidebar */}
-      {menuOpen && <Sidebar closeMenu={() => setMenuOpen(false)} />}
+      {/* Sidebar with built-in responsiveness (mobile drawer + desktop fixed) */}
+      <Sidebar />
 
       {/* Sections */}
-      <div className="h-screen w-full flex flex-col md:flex-row items-center justify-center bg-gray-50 text-center md:text-left px-6" id="home">
+  <div className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center bg-gray-50 text-center md:text-left px-6 pt-16 md:pt-0" id="home">
   {/* Profile Photo */}
   <div className="mb-8 md:mb-0 md:mr-12">
     <img
       src={require('./assets/ArpitaMadhukarKalburgi.png')}
       alt="Arpita"
-      className="w-72 h-auto rounded-[20px] shadow-2xl hover:scale-105 transition-transform duration-300 mr-12"
+      className="w-48 sm:w-60 md:w-72 h-auto rounded-[20px] shadow-2xl hover:scale-105 transition-transform duration-300 md:mr-12 mx-auto md:mx-0"
 
     />
   </div>
 
   {/* Intro Text and Buttons */}
  <div className="max-w-xl">
-  <h1 className="text-6xl font-extrabold text-gray-800 mb-4">Hi, I'm Arpita!</h1>
+  <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 mb-4">Hi, I'm Arpita!</h1>
 
 
 <p className="text-xl text-gray-700 font-semibold mb-1">
@@ -97,7 +90,7 @@ function App() {
 
 
       <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white px-8 py-16" id="about">
-  <h2 className="text-5xl font-black mb-10 text-[#0f2940] text-center">ABOUT ME</h2>
+  <h3 className="text-4xl font-black mb-10 text-[#0f2940] text-center">ABOUT ME</h3>
   <div className="max-w-3xl text-center md:text-left leading-relaxed text-gray-800 space-y-4">
     <p>
       I have nearly <strong>3 years of experience</strong> working across <strong>AWS, Azure, and ServiceNow</strong>, building scalable cloud and data solutions.
@@ -118,10 +111,8 @@ function App() {
 </div>
 
 
-      <div className="h-screen w-full flex items-center justify-center bg-white" id="experience">
-        
-  <div className="min-h-screen w-full bg-[#f9fafb] text-gray-800 px-6 py-20" id="experience">
-  <h2 className="text-5xl font-extrabold text-center text-[#1f2937] mb-16">EXPERIENCE</h2>
+    <div className="min-h-screen w-full bg-[#f9fafb] text-gray-800 px-6 py-20" id="experience">
+  <h3 className="text-4xl font-extrabold text-center text-[#1f2937] mb-16">EXPERIENCE</h3>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
     {/* Accenture - ServiceNow Developer */}
@@ -166,11 +157,9 @@ function App() {
 </div>
 
 
-      </div>
-
 <div className="py-16 px-4 bg-white" id="certifications">
   <div className="max-w-6xl mx-auto bg-gray-50 rounded-xl shadow-lg p-8">
-    <h2 className="text-4xl font-extrabold text-center text-[#0f2940] mb-10">CERTIFICATIONS & ACCREDITATIONS</h2>
+    <h3 className="text-4xl font-extrabold text-center text-[#0f2940] mb-10">CERTIFICATIONS & ACCREDITATIONS</h3>
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-center items-center">
       {/* Repeat this block for each certification */}
@@ -178,7 +167,7 @@ function App() {
         <img
           src={require('./assets/AWS-SSA.png')}
           alt="AWS Certified Solutions Architect"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     AWS Certified Solutions Architect - Associate
@@ -199,8 +188,8 @@ function App() {
       <div className="flex flex-col items-center group hover:scale-105 transition-transform duration-300">
         <img
           src={require('./assets/OCI-GenAI.png')}
-          alt="AWS Certified Solutions Architect"
-          className="w-30 h-30 object-contain"
+          alt="Oracle Cloud Infrastructure Generative AI Professional"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     Oracle Cloud Infrastructure Generative AI Professional
@@ -219,7 +208,7 @@ function App() {
         <img
           src={require('./assets/SNow-CSA.png')}
           alt="ServiceNow Certified System Administrator"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Certified System Administrator
@@ -237,7 +226,7 @@ function App() {
         <img
           src={require('./assets/SNow-FD.png')}
           alt="Micro-Certification - Flow Designer"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Micro-Certification - Flow Designer
@@ -255,7 +244,7 @@ function App() {
         <img
           src={require('./assets/SNow-ATF.png')}
           alt="Micro-Certification - Automated Test Framework"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     ServiceNow Micro-Certification - Automated Test Framework
@@ -273,7 +262,7 @@ function App() {
         <img
           src={require('./assets/Databricks Fundamentals.png')}
           alt="Academy Accreditation - Databricks Fundamentals"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     Academy Accreditation - Databricks Fundamentals
@@ -291,13 +280,13 @@ function App() {
         <img
           src={require('./assets/Databricks Gen-AI.png')}
           alt="Academy Accreditation - Generative AI Fundamentals"
-          className="w-30 h-30 object-contain"
+          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-contain"
         />
         <p className="text-center font-semibold text-[#0f2940] text-sm md:text-base mb-1">
     Academy Accreditation - Generative AI Fundamentals
   </p>
         <a
-          href="hhttps://credentials.databricks.com/ed0a4038-5227-4c28-b572-220755c2f6e7#acc.mwpMHxO8"
+          href="https://credentials.databricks.com/ed0a4038-5227-4c28-b572-220755c2f6e7#acc.mwpMHxO8"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 text-sm font-medium text-[#0f2940] opacity-0 group-hover:opacity-100 transition-opacity"
@@ -310,7 +299,7 @@ function App() {
 </div>
 
       <div className="min-h-screen bg-gray-100 px-6 py-20" id="projects">
-  <h2 className="text-5xl font-extrabold text-center text-[#0f2940] mb-16">PROJECTS</h2>
+  <h3 className="text-4xl font-extrabold text-center text-[#0f2940] mb-16">PROJECTS</h3>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
     {/* Example project card - repeat 6 times */}
@@ -524,7 +513,7 @@ function App() {
 
 {/* HACKATHONS & CASE STUDIES */}
 <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#f8f9fa] text-[#0f2940] px-8 py-20" id="hackathons">
-  <h2 className="text-5xl font-black mb-16 text-center">HACKATHONS & CASE STUDIES</h2>
+  <h3 className="text-4xl font-black mb-16 text-center">HACKATHONS & CASE STUDIES</h3>
 
   <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12">
     
@@ -551,7 +540,7 @@ function App() {
 
 {/* CONFERENCES & PROFESSIONAL EVENTS */}
 <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#f0f7f4] text-[#0f2940] px-8 py-20" id="conferences">
-  <h2 className="text-5xl font-black mb-16 text-center">CONFERENCES & PROFESSIONAL EVENTS</h2>
+  <h3 className="text-4xl font-black mb-16 text-center">CONFERENCES & PROFESSIONAL EVENTS</h3>
 
   <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12">
 
@@ -569,7 +558,7 @@ function App() {
 
 {/* TEACHING & MENTORING */}
 <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#f9fafb] text-[#0f2940] px-8 py-20" id="teaching">
-  <h2 className="text-5xl font-black mb-16 text-center">TEACHING & MENTORING</h2>
+  <h3 className="text-4xl font-black mb-16 text-center">TEACHING & MENTORING</h3>
 
   <div className="max-w-4xl bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
     <h3 className="text-2xl font-bold mb-3">Graduate Teaching Assistant – Human-Centered Design (ITIS 6300/8300)</h3>
@@ -585,14 +574,14 @@ function App() {
       {/* EDUCATION */}
       <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#aad4bd] text-[#0f2940] px-8 py-20" id="education">
 
-  <h2 className="text-5xl font-black mb-16 text-center">EDUCATION</h2>
+  <h3 className="text-4xl font-black mb-16 text-center">EDUCATION</h3>
 
   {/* UNC Charlotte */}
   <div className="flex flex-col md:flex-row items-start justify-center gap-8 mb-16 w-full max-w-6xl">
     <img
       src={require('./assets/UNCC-Logo.png')}
       alt="UNC Charlotte Logo"
-      className="w-40 h-auto object-contain bg-white p-2 shadow-lg"
+      className="w-28 sm:w-32 md:w-40 h-auto object-contain bg-white p-2 shadow-lg"
     />
     <div className="space-y-3">
       <h3 className="text-xl font-bold">
@@ -612,7 +601,7 @@ function App() {
     <img
       src={require('./assets/BEC-Logo.png')}
       alt="BEC Logo"
-      className="w-40 h-auto object-contain rounded-full border-4 border-yellow-400 shadow-lg bg-white p-2"
+      className="w-28 sm:w-32 md:w-40 h-auto object-contain rounded-full border-4 border-yellow-400 shadow-lg bg-white p-2"
     />
     <div className="space-y-3">
       <h3 className="text-xl font-bold">
@@ -630,53 +619,8 @@ function App() {
 
 
 
-      <div className="py-12 bg-gray-100 flex items-center justify-center px-2" id="contact">
-  <div className="w-full max-w-xs bg-white p-3 rounded-xl shadow-md">
+<ContactForm />
 
-
-    <h2 className="text-3xl font-bold mb-6 text-center text-[#0f2940]">Get In Touch</h2>
-
-    <form className="space-y-4">
-      <div>
-        <label className="block mb-1 text-sm font-medium text-gray-700">Name</label>
-        <input
-          type="text"
-          placeholder="Your name"
-          className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f16e44]"
-        />
-      </div>
-      <div>
-        <label className="block mb-1 text-sm font-medium text-gray-700">Email</label>
-        <input
-          type="email"
-          placeholder="Your email"
-          className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f16e44]"
-        />
-      </div>
-      <div>
-        <label className="block mb-1 text-sm font-medium text-gray-700">Message</label>
-        <textarea
-          rows="3"
-          placeholder="Write your message..."
-          className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f16e44]"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        className="w-full bg-[#f16e44] text-white py-2 rounded-md font-semibold hover:bg-[#e05a30] transition duration-300 text-sm"
-      >
-        Send Message
-      </button>
-    </form>
-
-    {/* Optional: Socials */}
-    <div className="mt-6 flex justify-center gap-6 text-xl text-[#0f2940]">
-      <a href="mailto:your@email.com" className="hover:text-[#f16e44]">📧</a>
-      <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="hover:text-[#f16e44]">🐱</a>
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="hover:text-[#f16e44]">🔗</a>
-    </div>
-  </div>
-</div>
 
 <footer className="bg-[#0f2940] text-white text-center py-6 mt-10">
   <div className="flex flex-col md:flex-row items-center justify-center gap-6">
